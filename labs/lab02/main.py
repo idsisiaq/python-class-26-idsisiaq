@@ -5,30 +5,35 @@
 # 10/7/26
 
 print("==================================== \n WELCOME TO THE MATH QUIZ \n====================================" )
-
+# Collect user name and initialize variable
 user = input("What is your Name: ")
 score = 0
 quiz_status = input(f"Hey {user} are you ready to take the quiz?(Y or N): ").upper()
 
-if quiz_status != "N" and quiz_status != "NO" and quiz_status != "Y" and quiz_status != "YES":
-    print(f"Hey {user} Please Enter a Valid Input (Y or N): ")
+while quiz_status != "N" and quiz_status != "NO" and quiz_status != "Y" and quiz_status != "YES":
+    print(f"Hey {user} Please Enter a Valid Input (Y if Yes or N if No) ")
     quiz_status = input(f"Hey {user} are you ready to take the quiz?(Y or N): ").upper()
 
 
 while quiz_status == "Y" or quiz_status == "YES":
     print("\nAwnsers will have to be inputed in INTEGER form!\n")
+    print("***** Question 1 *****")
     question_1 = int(input("What is 5 + 5 = "))
     if question_1 == 10:
         score += 1
+    print("\n***** Question 2 *****")
     question_2 = int(input("\nWhat is 5 x 5 = "))
     if question_2 == 25:
         score += 1
+    print("\n***** Question 3 *****")
     question_3 = int(input("\nWhat is 5 / 5 = "))
     if question_3 == 1:
         score += 1
+    print("\n***** Question 4 *****")
     question_4 = int(input("\nWhat is 5 - 5 = "))
     if question_4 == 0:
         score += 1 
+    print("\n***** Question 5 *****")
     question_5 = int(input("\nWhat is 5 + 5(5) = "))
     if question_5 == 30:
         score += 1
