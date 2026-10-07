@@ -10,6 +10,7 @@ user = input("What is your Name: ")
 score = 0
 quiz_status = input(f"Hey {user} are you ready to take the quiz?(Y or N): ").upper()
 
+# Validating user input 
 while quiz_status != "N" and quiz_status != "NO" and quiz_status != "Y" and quiz_status != "YES":
     print(f"Hey {user} Please Enter a Valid Input (Y if Yes or N if No) ")
     quiz_status = input(f"Hey {user} are you ready to take the quiz?(Y or N): ").upper()
@@ -17,6 +18,7 @@ while quiz_status != "N" and quiz_status != "NO" and quiz_status != "Y" and quiz
 
 while quiz_status == "Y" or quiz_status == "YES":
     print("\nAwnsers will have to be inputed in INTEGER form!\n")
+    # Asking the user questions 
     print("***** Question 1 *****")
     question_1 = int(input("What is 5 + 5 = "))
     if question_1 == 10:
