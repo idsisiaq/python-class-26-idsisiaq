@@ -29,6 +29,7 @@ while True:
     else:
         print("Error: Please enter positive values for miles, gallons, and cost.")
     again_trip = input("Do you want to enter another trip? (y/n): ")
+    print()
 
     if again_trip.lower() != 'y':
         break
