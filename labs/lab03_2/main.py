@@ -22,13 +22,13 @@ while another_set.lower() == "y":
     while True:
         
 
-        
+        # User Input
         test_score = input("Enter test score: ")
         
         if test_score.lower() == "end": #check if user wants to end input
             break
         else:
-            test_score = int(test_score)      # Otherwise convert the input into int's
+            test_score = int(test_score)      # Otherwise convert the input into a integer
 
         if test_score >= 0 and test_score <= 100:
             score_total += test_score
