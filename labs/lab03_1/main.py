@@ -9,6 +9,7 @@ print()
 
 # get input from the user
 while True:
+    # User Inputs
     miles_driven = float(input("Enter miles driven:  "))
     
     gallons_used = float(input("Enter gallons of gas used:  "))
@@ -16,6 +17,7 @@ while True:
     cost = float(input("Enter cost of gas per gallon: "))
     print()
 
+    # Check for validation 
     if miles_driven> 0 and gallons_used > 0 and cost > 0:
         mpg = miles_driven / gallons_used
         total_cost = gallons_used * cost
