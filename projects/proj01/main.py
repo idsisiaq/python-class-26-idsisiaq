@@ -3,11 +3,12 @@
 # CS31
 # Manav Patel
 # 10/25/26
-
+# Display message
 print("=======================================")
 print("      WELCOME TO COOKIE COMPANY!")
 print("=======================================")
 
+# User input if they want to continue
 more_info = input("Would you like to learn more? (y/n): ").lower()
 
 if more_info == "y" or more_info == "yes":
