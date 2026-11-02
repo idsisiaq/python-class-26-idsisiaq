@@ -16,6 +16,7 @@ def main():
 
     # Menu System
     while True:
+        print()
         print(" * * MENU * *")
         print("1 - Say Hello")
         print("2 - Output Full Name")
@@ -23,30 +24,39 @@ def main():
         print("4 - Read Module Documentation")
         print("5 - Exit Program")
 
-        menuChoice = input("What would you like to do? ")
+
+        menuChoice = input("\nWhat would you like to do? ")
 
         # if else block based on user choice
 
         if menuChoice == "1":
             # Call sayHello
+            print()
             nameformat.sayHello(firstName)
         elif menuChoice == "2":
             # Call fullName
+            print()
             nameformat.fullName(firstName, lastName)
         elif menuChoice == "3":
             # Call LastNameFirst
+            print()
             nameformat.lastNameFirst(firstName, lastName)
+        
         elif menuChoice == "4":
+            print()
             help(nameformat.sayHello)
             help(nameformat.fullName)
             help(nameformat.lastNameFirst)
             
         elif menuChoice == "5":
+            print()
             print("Thank you for trying nameformat.")
-            break;
+            break
         else:
+            print()
             print("Invalid input. Please try again")
 
 
 if __name__ == "__main__":
     main()
+    print()
