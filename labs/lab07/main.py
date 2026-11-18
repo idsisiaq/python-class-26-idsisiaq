@@ -36,11 +36,12 @@ def get_miles_driven():
 def get_gallons_used():
     while (gallons_used := float(input("Enter gallons of gas:\t"))) <= 0:                    
         print("Entry must be greater than zero. Please try again.\n")
-    return gallons_used
+    return gallons_used 
         
 def main():
     # display a welcome message
     print("The Miles Per Gallon program")
+    
     print()
 
     trips = read_trips()
