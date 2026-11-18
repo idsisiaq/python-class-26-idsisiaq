@@ -1,6 +1,6 @@
 # Starting file for LAB 9
 # Include your course number, student first and last name, and date in the comment header
-
+# CS31, Manav Patel, 11/18/26
 def main():
     full_name = get_full_name()
     print()
@@ -41,4 +41,4 @@ def get_password():
             return password
         
 if __name__ == "__main__":
-    main()
+    main() 
