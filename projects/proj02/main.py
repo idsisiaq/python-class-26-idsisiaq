@@ -49,15 +49,14 @@ def main():
                 place = input("Enter a place: ")
                 number = input("Enter a number: ")
 
-                 
-                print(f""" 
-One dark and stormy night, you walked into a {adjective} haunted house.
-Suddenly, a {animal} jumped out from a corner and scared you!
-You ran {number} steps and tripped over a pile of {food}.
-While you were {verb}, you noticed a strange noise comeing from the basement.
-You followed the sound and found a secret passage that led to a hidden {place}.
-You decided to follow the passage and were never seen again. The end.
-""")
+                print()
+                print(f"One dark and stormy night, you walked into a {adjective} haunted house.")
+                print(f"Suddenly, a {animal} jumped out from a corner and scared you!")
+                print(f"You ran {number} steps and tripped over a pile of {food}.")
+                print(f"While you were {verb}, you noticed a strange noise coming from the basement.")
+                print(f"You followed the sound and found a secret passage that led to a hidden {place}.")
+                print("You decided to follow the passage and were never seen again. The end.")
+                
 
             elif choice == "b":
                 
@@ -69,20 +68,19 @@ You decided to follow the passage and were never seen again. The end.
                 number = input("Enter a number: ")
                 name_for_movie = input("Enter a name for a movie: ")
                 
+                print()
+                print(f"One morning, you teamed up with {superhero} to save the world.")
+                print(f"Unfortunately, the evil {villain} appeared with a {adjective} plan.")
+                print(f"Your only weapon was a giant {object}.")
+                print(f"You and {superhero} got chased for {number} miles while {verb} to escape the villain's clutches.")
+                print(f"Just as things looked hopeless, you used the {object} to defeat the villain and save the day.")
+                print(f"The world cheered for you and {superhero} as you were hailed as heroes in the new blockbuster movie, '{name_for_movie}'.")               
                
-                print(f""" 
-One morning, you teamed up with {superhero} to save the world.
-Unfortunately, the evil {villain} appeared with a {adjective} plan.
-Your only weapon was a giant {object}
-you and {superhero} got chased for {number} miles while {verb} to escape the villain's clutches.
-just as things looked hopeless, you used the {object} to defeat the villain and save the day. 
-The world cheered for you and {superhero} as you were hailed as heroes in the new blockbuster movie, "{name_for_movie}".
-""")
             
             stories_created += 1
 
-            # Ask if they want to create another story
-            again = input("Do you want to create another story? (y/n): ").lower()
+            
+            again = input("\nDo you want to create another story? (y/n): ").lower()
 
             
             while again != "y" and again != "n":

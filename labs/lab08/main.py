@@ -1,5 +1,6 @@
 # Starting file for LAB 8
 # Include your course number, student first and last name, and date in the comment header
+# CS31, Manav Patel
 
 from decimal import Decimal
 from decimal import ROUND_HALF_UP
